@@ -4,10 +4,10 @@ import com.softwareeni.sftw.ProgramData.data;
 
 import java.sql.*;
 
-public class Sorgu {
+public class Query {
     data dat = new data();
 
-    ResultSet sorgu(String query) {
+  public  ResultSet sorgu(String query) {
         try {
             Connection connection = DriverManager.getConnection(
                 dat.getSQL_URL(),
